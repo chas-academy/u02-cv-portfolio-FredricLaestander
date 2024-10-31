@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+$font-primary: "Outfit", sans-serif;
+
+@mixin large {
+    font-family: $font-primary;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+@mixin body {
+    font-family: $font-primary;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+@mixin small {
+    font-family: $font-primary;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+@mixin tiny {
+    font-family: $font-primary;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+@mixin heading-display {
+    font-family: $font-primary;
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 500;
+}
+
+@mixin heading-xl {
+    font-family: $font-primary;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+@mixin heading-lg {
+    font-family: $font-primary;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+@mixin heading-md {
+    font-family: $font-primary;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+@mixin heading-small {
+    font-family: $font-primary;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}

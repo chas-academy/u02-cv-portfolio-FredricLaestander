@@ -1,0 +1,17 @@
+@use "color";
+
+header nav {
+    background-color: color.$secondary-900-o80;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    backdrop-filter: blur(16px);
+    width: 100%;
+    a {
+        color: color.$button-text;
+        &:hover {
+            color: color.$button-highlight;
+        }
+    }
+}

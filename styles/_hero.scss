@@ -1,0 +1,26 @@
+@use "color";
+@use "typography";
+
+.hero {
+    justify-content: center;
+    background-color: color.$secondary-900;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    
+    h1 {
+        @include typography.heading-xl;
+        color: color.$text-primary;
+        .creative {
+            color: color.$text-accent;
+        }
+    }
+
+    img {
+        width: 2rem;
+        position: absolute;
+        bottom: 5rem;
+    }
+}

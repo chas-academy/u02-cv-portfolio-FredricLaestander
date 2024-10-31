@@ -1,0 +1,9 @@
+@use "reset";
+@use "typography";
+@use "header";
+@use "hero";
+
+body {
+    @include typography.body;
+
+}
