@@ -57,9 +57,96 @@ header nav a:hover {
   bottom: 5rem;
 }
 
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+.profile img {
+  width: 6rem;
+  border-radius: 50%;
+}
+.profile .title h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #D9D9D9;
+}
+.profile .title p {
+  color: #8CD843;
+}
+.profile .location {
+  display: flex;
+  color: #D9D9D9;
+  gap: 0.5rem;
+}
+.profile .location img {
+  width: 1.125rem;
+}
+.profile .location p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #D9D9D9;
+}
+.profile .location span {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+.profile .quote {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #949B9A;
+}
+.profile nav {
+  display: flex;
+  color: #D9D9D9;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem 0;
+}
+.profile nav .resume {
+  display: flex;
+  align-items: center;
+  border: 0.125rem solid #D9D9D9;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+}
+.profile nav .resume img {
+  width: 1.125rem;
+}
+.profile nav .github {
+  display: flex;
+  align-items: center;
+}
+.profile nav .github img {
+  width: 1.125rem;
+}
+.profile nav .linkedin {
+  display: flex;
+  align-items: center;
+}
+.profile nav .linkedin img {
+  width: 1.125rem;
+}
+.profile nav .contact {
+  display: flex;
+  align-items: center;
+}
+.profile nav .contact img {
+  width: 1.125rem;
+}
+
 body {
   font-family: "Outfit", sans-serif;
   font-size: 1.125rem;
   line-height: 1.5rem;
   font-weight: 400;
+  background-color: #313338;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 $font-primary: "Outfit", sans-serif;
-
+//text fonts
 @mixin large {
     font-family: $font-primary;
     font-size: 1.5rem;
@@ -29,7 +29,7 @@ $font-primary: "Outfit", sans-serif;
     line-height: 1rem;
     font-weight: 400;
 }
-
+//heading fonts
 @mixin heading-display {
     font-family: $font-primary;
     font-size: 6rem;
@@ -58,7 +58,7 @@ $font-primary: "Outfit", sans-serif;
     font-weight: 500;
 }
 
-@mixin heading-small {
+@mixin heading-sm {
     font-family: $font-primary;
     font-size: 1rem;
     line-height: 1.5rem;

@@ -1,9 +1,11 @@
 @use "reset";
+@use "color";
 @use "typography";
 @use "header";
 @use "hero";
+@use "profile";
 
 body {
     @include typography.body;
-
+    background-color: color.$primary-600;
 }
