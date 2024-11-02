@@ -1,0 +1,27 @@
+@use "color";
+@use "typography";
+
+.projects {
+    h2 {
+      @include typography.heading-lg;
+      color: color.$text-primary;
+    }
+
+    table {
+        background-image: linear-gradient(color.$accent-700, color.$primary-650);
+        color: color.$text-primary;
+
+        thead {
+            @include typography.heading-sm;
+        }
+
+        tbody {
+            th {
+                @include typography.heading-sm;
+            }
+            td {
+                @include typography.tiny;
+            }
+        }
+    }
+}
