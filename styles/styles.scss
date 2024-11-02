@@ -4,6 +4,7 @@
 @use "header";
 @use "hero";
 @use "profile";
+@use "skills";
 
 body {
     @include typography.body;

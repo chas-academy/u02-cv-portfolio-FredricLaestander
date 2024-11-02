@@ -143,6 +143,130 @@ header nav a:hover {
   width: 1.125rem;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  gap: 1rem;
+}
+.skills h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #D9D9D9;
+}
+.skills .languages h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #D9D9D9;
+}
+.skills .languages .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skills .languages .tags p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #AECBFA;
+  background-color: #174EA6;
+  border-radius: 0.75rem;
+  padding: 0 0.5rem;
+}
+.skills .frameworks h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #D9D9D9;
+}
+.skills .frameworks .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skills .frameworks .tags p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #A8DAB5;
+  background-color: #0D652D;
+  border-radius: 0.75rem;
+  padding: 0 0.5rem;
+}
+.skills .backend h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #D9D9D9;
+}
+.skills .backend .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skills .backend .tags p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #C9B8F5;
+  background-color: #6148E1;
+  border-radius: 0.75rem;
+  padding: 0 0.5rem;
+}
+.skills .databases h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #D9D9D9;
+}
+.skills .databases .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skills .databases .tags p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #F6AEA9;
+  background-color: #B12624;
+  border-radius: 0.75rem;
+  padding: 0 0.5rem;
+}
+.skills .practices h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #D9D9D9;
+}
+.skills .practices .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skills .practices .tags p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #E7B30A;
+  background-color: #53420E;
+  border-radius: 0.75rem;
+  padding: 0 0.5rem;
+}
+
 body {
   font-family: "Outfit", sans-serif;
   font-size: 1.125rem;
