@@ -37,6 +37,7 @@
             .date {
                 @include typography.small;
                 color: color.$text-secondary;
+                margin: 0 0 0.5rem 0;
             }
 
             details {
@@ -86,6 +87,7 @@
             .date {
                 @include typography.small;
                 color: color.$text-secondary;
+                margin: 0 0 0.5rem 0;
             }
 
             details {

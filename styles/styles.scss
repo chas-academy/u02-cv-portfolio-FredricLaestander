@@ -6,6 +6,7 @@
 @use "profile";
 @use "skills";
 @use "education";
+@use "projects";
 
 body {
     @include typography.body;
