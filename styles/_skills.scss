@@ -51,6 +51,7 @@
             }
         }
     }
+
     .backend {
         h3 {
             @include typography.heading-sm;
@@ -90,6 +91,7 @@
             }
         }
     }
+    
     .practices {
         h3 {
             @include typography.heading-sm;
