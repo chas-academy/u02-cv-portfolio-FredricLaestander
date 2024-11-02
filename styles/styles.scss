@@ -5,6 +5,7 @@
 @use "hero";
 @use "profile";
 @use "skills";
+@use "education";
 
 body {
     @include typography.body;

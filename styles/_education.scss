@@ -1,0 +1,110 @@
+@use "color";
+@use "typography";
+
+.education {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+    gap: 1rem;
+
+    h2 {
+        @include typography.heading-lg;
+        color: color.$text-primary;
+    }
+
+    .info:nth-of-type(1) {
+        display: flex;
+        border-left: 0.125rem solid color.$white;
+        padding: 0 0 0 1rem;
+        gap: 1rem;
+
+        img {
+            width: 4rem;
+            border-radius: 2rem;
+        }
+
+        .content {
+            h3 {
+                @include typography.heading-md;
+                color: color.$text-primary;
+            }
+            
+            p {
+                @include typography.heading-sm;
+                color: color.$text-primary;
+            }
+        
+            .date {
+                @include typography.small;
+                color: color.$text-secondary;
+            }
+
+            details {
+                //help Ella
+                summary::marker {
+                    content: "";
+                    background-image: url("assets/icons/chevron-down.svg");
+                    width: 1.5rem;
+                }
+
+                p {
+                    @include typography.small;
+                    //want bold text on L89
+                    color: color.$text-primary;
+                }
+
+                ul>li {
+                    @include typography.small;
+                    color: color.$text-primary;
+                }
+            }
+        }
+    }
+
+    .info:nth-of-type(2) {
+        display: flex;
+        border-left: 0.125rem solid color.$white;
+        padding: 0 0 0 1rem;
+        gap: 1rem;
+
+        img {
+            width: 4rem;
+            border-radius: 2rem;
+        }
+
+        .content {
+            h3 {
+                @include typography.heading-md;
+                color: color.$text-primary;
+            }
+            
+            p {
+                @include typography.heading-sm;
+                color: color.$text-primary;
+            }
+        
+            .date {
+                @include typography.small;
+                color: color.$text-secondary;
+            }
+
+            details {
+                //help Ella
+                summary::marker {
+                    content: "";
+                    background-image: url("assets/icons/chevron-down.svg");
+                    width: 1.5rem;
+                }
+                p {
+                    @include typography.small;
+                    //want bold text on L89
+                    color: color.$text-primary;
+                }
+                ul>li {
+                    @include typography.small;
+                    color: color.$text-primary;
+                }
+            }
+        }
+    }
+}
