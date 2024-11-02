@@ -7,6 +7,8 @@
 @use "skills";
 @use "education";
 @use "projects";
+@use "video";
+@use "footer";
 
 body {
     @include typography.body;

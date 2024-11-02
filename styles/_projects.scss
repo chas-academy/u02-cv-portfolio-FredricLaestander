@@ -5,6 +5,9 @@
     h2 {
       @include typography.heading-lg;
       color: color.$text-primary;
+      display: flex;
+      flex-direction: column;
+      margin: 0 1rem;
     }
 
     table {
