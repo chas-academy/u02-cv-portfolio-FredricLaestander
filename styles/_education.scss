@@ -61,12 +61,12 @@
                         display: none;
                     }
 
-                    p {
+                    span {
                         font-weight: 700;
                     }
                 }
 
-                p {
+                span {
                     @include typography.small;
                 }
 

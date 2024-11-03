@@ -306,10 +306,10 @@ header nav a:hover {
 .education .info .content details summary::marker {
   display: none;
 }
-.education .info .content details summary p {
+.education .info .content details summary span {
   font-weight: 700;
 }
-.education .info .content details p {
+.education .info .content details span {
   font-family: "Outfit", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
