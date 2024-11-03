@@ -44,6 +44,10 @@
             details {
                 color: color.$text-primary;
 
+                &[open] img {
+                    rotate: 180deg;
+                }
+
                 summary {
                     display: flex;
                     gap: 0.5rem;

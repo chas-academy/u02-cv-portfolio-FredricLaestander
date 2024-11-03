@@ -27,10 +27,31 @@
         }
     }
 
-    img {
+    svg {
         width: 2rem;
         position: absolute;
         bottom: 5rem;
+        color: color.$white;
+
+        .mousewheel {
+            animation: scrolldown 2s infinite ease;
+        }
+
+        @keyframes scrolldown {
+            0% {
+                transform: translateY(0%);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(30%);
+                opacity: 0;
+            }
+        }
     }
 
 }

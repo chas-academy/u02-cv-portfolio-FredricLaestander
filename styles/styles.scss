@@ -11,6 +11,10 @@
 @use "footer";
 @use "breakpoint";
 
+html {
+    scroll-behavior: smooth
+}
+
 body {
     @include typography.body;
     background-color: color.$primary-600;
@@ -23,6 +27,9 @@ body {
             @include breakpoint.sm {
                 display: flex;
                 max-width: 45rem;
+                position: relative;
+                align-items: start;
+                
 
                 .column, .profile {
                     flex: 1 1 0%;
