@@ -1,14 +1,20 @@
 @use "color";
 @use "typography";
+@use "breakpoint";
 
 .profile {
     display: flex;
     flex-direction: column;
-    margin: 0 1rem;
+    margin: 2rem 1rem 0;
+    gap: 1rem;
     
     img {
         width: 6rem;
         border-radius: 50%;
+        
+        @include breakpoint.sm {
+            width: 10rem;
+        }
     }
 
     .title {
@@ -50,39 +56,21 @@
         color: color.$text-primary;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 1rem 0;
+        gap: 1rem;
+        img {
+            width: 1.125rem;
+        }
         
-
-        .resume {
+        a {
             display: flex;
             align-items: center;
+            gap: 0.25rem;
+        }
+
+        .resume {
             border: 0.125rem solid color.$white;
             border-radius: 0.25rem;
             padding: 0.25rem 0.5rem 0.25rem 0.25rem;
-            img {
-                width: 1.125rem;
-            }
-        }
-        .github {
-            display: flex;
-            align-items: center;
-            img {
-                width: 1.125rem;
-            }
-        }
-        .linkedin {
-            display: flex;
-            align-items: center;
-            img {
-                width: 1.125rem;
-            }
-        }
-        .contact {
-            display: flex;
-            align-items: center;
-            img {
-                width: 1.125rem;
-            }
         }
     }
 }

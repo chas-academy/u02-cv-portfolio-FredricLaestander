@@ -9,8 +9,33 @@
 @use "projects";
 @use "video";
 @use "footer";
+@use "breakpoint";
 
 body {
     @include typography.body;
     background-color: color.$primary-600;
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .container {
+            @include breakpoint.sm {
+                display: flex;
+                max-width: 45rem;
+
+                .column, .profile {
+                    flex: 1 1 0%;
+                }
+            }
+
+            @include breakpoint.xl {
+                max-width: 75rem;
+            }
+        }
+        .skills, .education, .projects, .video {
+            margin-top: 5rem;
+        }
+    }
+    
 }

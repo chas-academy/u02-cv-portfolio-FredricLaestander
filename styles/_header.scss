@@ -1,4 +1,6 @@
 @use "color";
+@use "breakpoint";
+@use "typography";
 
 header nav {
     background-color: color.$secondary-900-o80;
@@ -8,8 +10,24 @@ header nav {
     position: fixed;
     backdrop-filter: blur(16px);
     width: 100%;
+    z-index: 1;
+    
+    @include breakpoint.lg {
+        background-color: transparent;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 0 0 1rem;
+        @include typography.heading-md;
+        backdrop-filter: unset;
+        justify-content: center;
+        height: 100vh;
+        width: auto;
+    }
+
     a {
+        width: min-content;
         color: color.$button-text;
+        
         &:hover {
             color: color.$button-highlight;
         }

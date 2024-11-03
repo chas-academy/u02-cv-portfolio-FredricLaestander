@@ -1,9 +1,7 @@
 @use "color";
 
-p {
-    display: flex;
-    flex-direction: column;
-    margin: 0 1rem;
-    gap: 1rem;
+footer p {
+    margin: 2rem 1rem 1rem;
     color: color.$text-primary;
+    text-align: center;
 }

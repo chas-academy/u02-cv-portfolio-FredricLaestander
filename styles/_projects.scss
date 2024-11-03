@@ -2,6 +2,10 @@
 @use "typography";
 
 .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
     h2 {
       @include typography.heading-lg;
       color: color.$text-primary;

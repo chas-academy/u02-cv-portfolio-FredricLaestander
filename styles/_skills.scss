@@ -6,109 +6,50 @@
     flex-direction: column;
     margin: 0 1rem;
     gap: 1rem;
+    @include typography.heading-sm;
+    color: color.$text-primary;
 
     h2 {
         @include typography.heading-lg;
-        color: color.$text-primary;
     }
 
-    .languages {
-        h3 {
-            @include typography.heading-sm;
-            color: color.$text-primary;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            p {
-                @include typography.heading-sm;
-                color: color.$blue;
-                background-color: color.$blue-dark;
-                border-radius: 0.75rem;
-                padding: 0 0.5rem;
-            }
-        }
-    }
-
-    .frameworks {
-        h3 {
-            @include typography.heading-sm;
-            color: color.$text-primary;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            p {
-                @include typography.heading-sm;
-                color: color.$green;
-                background-color: color.$green-dark;
-                border-radius: 0.75rem;
-                padding: 0 0.5rem;
-            }
-        }
-    }
-
-    .backend {
-        h3 {
-            @include typography.heading-sm;
-            color: color.$text-primary;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            p {
-                @include typography.heading-sm;
-                color: color.$purple;
-                background-color: color.$purple-dark;
-                border-radius: 0.75rem;
-                padding: 0 0.5rem;
-            }
-        }
-    }
-
-    .databases {
-        h3 {
-            @include typography.heading-sm;
-            color: color.$text-primary;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            p {
-                @include typography.heading-sm;
-                color: color.$red;
-                background-color: color.$red-dark;
-                border-radius: 0.75rem;
-                padding: 0 0.5rem;
-            }
-        }
+    h3 {
+        @include typography.heading-sm;
     }
     
-    .practices {
-        h3 {
-            @include typography.heading-sm;
-            color: color.$text-primary;
-        }
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
 
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            p {
-                @include typography.heading-sm;
-                color: color.$yellow;
-                background-color: color.$yellow-dark;
-                border-radius: 0.75rem;
-                padding: 0 0.5rem;
-            }
+        p {
+            border-radius: 0.75rem;
+            padding: 0 0.5rem;
         }
+    }
+
+    .languages p {
+        color: color.$blue;
+        background-color: color.$blue-dark;
+    }
+
+    .frameworks p {
+        color: color.$green;
+        background-color: color.$green-dark;
+    }
+
+    .backend p {
+        color: color.$purple;
+        background-color: color.$purple-dark;
+    }
+
+    .databases p {
+        color: color.$red;
+        background-color: color.$red-dark;
+    }
+    
+    .practices p {
+        color: color.$yellow;
+        background-color: color.$yellow-dark;
     }
 }

@@ -1,10 +1,12 @@
 @use "color";
 @use "typography";
+@use "breakpoint";
 
 .hero {
     justify-content: center;
     background-color: color.$secondary-900;
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -13,8 +15,15 @@
     h1 {
         @include typography.heading-xl;
         color: color.$text-primary;
+        max-width: 50rem;
+        text-wrap: pretty;
+
         .creative {
             color: color.$text-accent;
+        }
+
+        @include breakpoint.lg {
+            @include typography.heading-display
         }
     }
 
@@ -23,4 +32,5 @@
         position: absolute;
         bottom: 5rem;
     }
+
 }
